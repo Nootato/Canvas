@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* --variableName: property; */
+    --black: #000;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+
+main {
+    grid-column: 1 / 1;
+}
+
+aside {
+    grid-column: 2 / 2;
+    border-left: solid black 2px;
+}
