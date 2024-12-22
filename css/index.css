@@ -18,7 +18,51 @@ main {
     grid-column: 1 / 1;
 }
 
+h1 {
+    text-decoration: underline;
+}
+
 aside {
     grid-column: 2 / 2;
+    height: 100vh;
     border-left: solid black 2px;
+    padding: 8px;
+}
+
+.shape {
+    padding: 13px;
+    margin-top: 34px;    
+    color: white;
+    background-color: #000;
+    text-align: center;
+}
+
+.shape:hover {
+    background-color: darkslategrey;
+    transition: background-color 0.25s ease;
+}
+
+.shape:active {
+    background-color: darkcyan;
+    transition: background-color 0.1s ease; 
+}
+
+.description {
+    line-height: 16px;
+    margin-top: calc(50% - 16px);
+    justify-self: center;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+}
+
+.newSquare {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    top: 0;
+    left: 0;
 }
